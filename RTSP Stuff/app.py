@@ -6,7 +6,6 @@ app = Flask(__name__)
 camera = cv2.VideoCapture('rtsp://admin:20160404@192.168.1.101:554/user=admin_password=20160404_channel=1_stream=1.sdp') 
  # use 0 for web camera
 #  for cctv camera use rtsp://username:password@ip_address:554/user=username_password='password'_channel=channel_number_stream=0.sdp' instead of camera
-# for local webcam use cv2.VideoCapture(0)
 
 def gen_frames():  # generate frame by frame from camera
     while True:
